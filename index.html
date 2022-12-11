@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />            
+
+    <title>Plant Adopter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+  
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div class="">
+        <nav class="navbar navbar-expand-lg fixed-top bg-transparent ">
+            <a class="navbar-brand" href="#">Plant Adopter</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="explore.html">Explore</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#econtact">Contact us</a>
+                </li>
+               
+
+              </ul>
+              
+
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa fa-user" aria-hidden="true"  data-toggle="modal" data-target="#exampleModal"></i>      
+                    </a>
+                  </li>
+                  
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart " ></i>    </a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+    <!--BODY-->
+    <div class="container-fluid">
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignupModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      
+                  <div class="container">
+              
+              <div class="tab">
+                <button class="tablinks one btn-success" onclick="openCity(event, 'London')">Adopter</button>
+                <button class="tablinks two btn-success" onclick="openCity(event, 'Paris')">Farmer</button>
+                </div>
+              
+              <div id="London" class="tabcontent">
+                <form action="farmer_dashboard.html" method="post">
+                                  
+                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">
+                                    Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="cpassword" name="cpassword">
+                                </div>
+                                <a href="farmer_dashboard.html"></a><button type="submit" class="btn btn-success ">Login</button><br>
+                                <a href="sign_adopter.html" class="text-center">new to plant adopters?</a>
+                          
+                            
+                            
+                            </form>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <form action="farmer_dashboard.html" method="post">
+              
+                               <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">
+                                    Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="cpassword" name="cpassword">
+                                </div>
+                                <button type="submit" class="btn btn-success">Login</button> <br>
+                                <a href="sign_farmer.html" class="text-center">new to plant farmers?</a>
+                            
+                            
+                            </form>
+              </div>
+              
+              <script>
+              function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+              </script>
+                 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--Modal end-->
+
+      <!--Contact-->
+
+      <div class="modal fade" id="econtact" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="SignupModalLabel">Contact Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                      <div class="container" >
+                        
+                      <div class="mb-3">
+                        <table class="table" >
+                          <tbody>
+                            <tr>
+                              <th scope="col">    <i class='fa-solid fa-location-dot blue-color'></i>
+                              </th>
+                              <td scope="col">Address<br>
+                                <span>Bangalore</span><br>
+                                <span>Karnataka</span>
+                              </td>
+                              
+                            </tr>
+                         
+                          
+                            <tr>
+                              <th scope="row"><i class='fa fa-phone'></i>                              </th>
+                              <td>Phone<br>
+                                <span>+91 7865324556</span><br>
+                                <span>+91 6736726378</span>
+                              </td>
+                              
+                            </tr>
+                            <tr>
+                              <th scope="row"><i class="fa-solid fa-envelope"></i></th>
+                              <td>Email<br>
+                                <span>anjali.patel@gmail.com</span><br>
+                                <span>divya234@gmail.com</span>
+                              </td>
+                             
+                            </tr>
+                              </tbody>
+                        </table>
+                        <div class="cfoot text-center ">
+                          <hr>
+                          <p>
+                            <i class="fa fa-instagram mx-1" style="font-size:24px"></i>
+                            <i class='fa fa-linkedin mx-1' style="font-size:24px"></i>
+                            <i class='fa fa-twitter mx-1' style="font-size:24px"></i>
+                            <i class='fa fa-facebook mx-1' style="font-size:24px"></i>
+                          </p>
+                        </div>
+                        
+                  </div>
+    
+    </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Contact end-->
+
+      <!--Carousel-->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="pl1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pl2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pl4.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+      <!--Carousel end-->
+
+      <!--Image and text-->
+      <div class="container-fluid">
+        <div class="img-txt">
+           
+          <img src="blackberries-936962.jpg" width="25%" height="30%" alt="" class="img1">
+          <div class="text">
+            <h2 style="font-weight:200 ;"><center>Adopting a plant is a new blessing!</center></h2>
+          
+              <h5 style="font-weight: 100;"><center>Adopt a plant today to help mother nature revive and the care-takers of the nature-our farmers.</center></h5>
+                <p>Adopting a plant is equivalent to saving out planet, which has become the need of the hour.
+                You may think that it would be difficult for you to look after the plant. But, at Plant Adopters, we are there to
+                help you to reach out to a farmer who would help you to grow trees.
+                 Find that adopting a tree is not at all difficult by clicking the Explore button, and start your 
+                 journey on the flourishment of nature.</p>
+     </div>
+      </div>
+      <hr>
+      <!--Image and text end-->
+
+      <!--FAQ-->
+
+
+      <!----------------------------------------------------------------------->
+      
+      
+<div class="faq_area section_padding_130" id="faq">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-lg-6">
+              <!-- Section Heading-->
+              <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                  <h2 class="text-dark"><span>Frequently </span> Asked Questions</h2>
+                  <div class="line"></div>
+              </div>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+          <!-- FAQ Area-->
+          <div class="col-12 col-sm-10 col-lg-8 ">
+              <div class="accordion faq-accordian" id="faqAccordion">
+                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                      <div class="card-header" id="headingOne">
+                          <h6 class="mb-0 collapsed bg-success" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">1. Where can I find the plants suited for my locality?<span class="lni-chevron-up"></span></h6>
+                      </div>
+                      <div class="collapse " id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                          <div class="card-body ">
+                              <p>A. Our website has the perfect manner to look up for a plant or a tree by just clicking on the ‘Explore’ button and filtering your search.</p>
+                             </div>
+                      </div>
+                  </div>
+                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                      <div class="card-header" id="headingTwo">
+                          <h6 class="mb-0 collapsed bg-success" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">2. What all documents are needed to sign up as an adopter/farmer?<span class="lni-chevron-up"></span></h6>
+                      </div>
+                      <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                          <div class="card-body">
+                              <p> A. A passport-sized photograph and an ID ( essentially Aadhar card ) is required to sign up as an plant adopter/farmer.</p>
+                             </div>
+                      </div>
+                  </div>
+                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                      <div class="card-header" id="headingThree">
+                          <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">3. How can I view the details of the farmer or the adopter associated with me?<span class="lni-chevron-up"></span></h6>
+                      </div>
+                      <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                          <div class="card-body">
+                              <p>A. When you log in into your dashboard, you will all the details of your associate farmer or adopter.</p>
+                            </div>
+                      </div>
+                  </div>
+
+                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                    <div class="card-header" id="headingThree">
+                        <h6 class="mb-0 collapsed bg-success" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">4. How can I track the growth of the plant that I adopted?<span class="lni-chevron-up"></span></h6>
+                    </div>
+                    <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            <p>A. The growth of your adopted plant can be tracked with the help of the ‘Plant Tracker’ tab present in your dashboard.</p>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                  <div class="card-header" id="headingThree">
+                      <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"> 5. How can I contact the farmer taking care of my adopted plants?<span class="lni-chevron-up"></span></h6>
+                  </div>
+                  <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                      <div class="card-body">
+                          <p> A. Plant Adopters follows the policy of being transparent. So once you adopt a plant, in your dashboard you will find the contact details of the farmer assigned with the task of taking care of your plant.
+                          </p>
+                        </div>
+                  </div>
+              </div>
+              </div>
+             
+          </div>
+      </div>
+  </div>
+</div>
+      
+      <!----------------------------------------------------------------------->
+     
+      <!--FAQ END-->
+      <hr>
+      <!--bottom-->
+      <div class="bottom">
+        <section class="home-newsletter ">
+          <div class="container">
+          <div class="row">
+          <div class="col-sm-12">
+            <div class="single">
+              <h2>Subscribe to our Newsletter</h2>
+            <div class="input-group">
+                   <input type="email" class="form-control" placeholder="Enter your email">
+                   <span class="input-group-btn">
+                   <button class="btn btn-theme up" type="submit">Subscribe</button>
+                   </span>
+                    </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>
+    </div>
+     <!--bottom end-->
+
+     
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <p><span><i class="fa fa-copyright" aria-hidden="true"></i></span>PlantAdopters-2022</p>
+    </div>
+   <!--Footer end-->
+    
+</body>
+</html>

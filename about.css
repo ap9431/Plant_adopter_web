@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+     padding: 0;
+   background: #F4F4F4;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+  }
+  #about{
+    background-image: url(pl3.jpg);
+    margin-bottom: 2rem;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+}
+.footer{
+  text-align: center;
+  color: white;
+  background-color: black;
+  margin-top: 1rem;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+.para1,.para2
+{
+   font-size:24px;
+}
+#about
+{
+   background-color: gainsboro;
+}
+#services
+{
+   background-color: gainsboro;
+}

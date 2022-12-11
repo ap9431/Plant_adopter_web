@@ -1,0 +1,15 @@
+li{
+    text-decoration: none;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+   font-weight: 500;
+}
+.card{
+    float: left;
+    margin-right:100px;
+}
+.detail{
+   padding: 2rem;
+    margin-left: 30px;
+}
